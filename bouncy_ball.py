@@ -44,12 +44,11 @@ def update(ti):
 #key down event
 def on_key_down(key):
     if key==keys.SPACE:
-        circ1.y=-200
+        circ1.vy=-400
     
     
     
 pgzrun.go()
-    
     
     
 pgzrun.go()
