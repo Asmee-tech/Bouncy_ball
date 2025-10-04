@@ -29,6 +29,7 @@ def draw():
 #defining update
 def update(ti):
     global circles
+    pass
     for i in circles:
         uy = i.vy
         i.vy += grav * ti
@@ -38,6 +39,13 @@ def update(ti):
             i.y=800
             i.vy=-i.vy*0,9
         i.x+=i.vx*ti
+        if i.x>800 or i.x<0:
+            i.vx=-i.vx
+            
+    
+    
+    
+pgzrun.go()
     
     
     
