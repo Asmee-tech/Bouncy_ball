@@ -37,11 +37,14 @@ def update(ti):
     #handeling bouncing
         if i.y>800:
             i.y=800
-            i.vy=-i.vy*0,9
+            i.vy=-i.vy*0.9
         i.x+=i.vx*ti
         if i.x>800 or i.x<0:
             i.vx=-i.vx
-            
+#key down event
+def on_key_down(key):
+    if key==keys.SPACE:
+        circ1.y=-200
     
     
     
