@@ -23,9 +23,11 @@ class bouncy():
         screen.draw.filled_circle(pos,self.radius,comc)
 #object creation
 circ1=bouncy(60,60,50)
-circles=[circ1]
+circ2=bouncy(70,70,50)
+circles=[circ1,circ2]
 def draw():
     circ1.draw()
+    circ2.draw()
 #defining update
 def update(ti):
     global circles
@@ -45,6 +47,7 @@ def update(ti):
 def on_key_down(key):
     if key==keys.SPACE:
         circ1.vy=-400
+        #circ2.vy=-400
     
     
     
